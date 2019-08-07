@@ -1,0 +1,366 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "36c63b7833f578987ec0a22fce99c45e",
+    "packages": [
+        {
+            "name": "gabordemooij/redbean",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gabordemooij/redbean.git",
+                "reference": "3ddbc6b5684684376b1f67a8c6bb9c93cf6cf476"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gabordemooij/redbean/zipball/3ddbc6b5684684376b1f67a8c6bb9c93cf6cf476",
+                "reference": "3ddbc6b5684684376b1f67a8c6bb9c93cf6cf476",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "RedBeanPHP\\": "RedBeanPHP"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Gabor de Mooij",
+                    "email": "gabor@redbeanphp.com",
+                    "homepage": "https://redbeanphp.com"
+                }
+            ],
+            "description": "RedBeanPHP ORM",
+            "homepage": "https://redbeanphp.com/",
+            "keywords": [
+                "orm"
+            ],
+            "time": "2019-08-04T11:40:57+00:00"
+        },
+        {
+            "name": "leocavalcante/siler",
+            "version": "v1.5.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/leocavalcante/siler.git",
+                "reference": "4868cb0629de6df32b7eb7beeb7377467de0cffc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/leocavalcante/siler/zipball/4868cb0629de6df32b7eb7beeb7377467de0cffc",
+                "reference": "4868cb0629de6df32b7eb7beeb7377467de0cffc",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "^1.2",
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "cboden/ratchet": "^0.4",
+                "cocur/slugify": "^3.2",
+                "eaglewu/swoole-ide-helper": "dev-master",
+                "ext-mongodb": "^1.5",
+                "gabordemooij/redbean": "^5.2",
+                "mongodb/mongodb": "^1.4",
+                "monolog/monolog": "^1.24",
+                "phan/phan": "^1.2",
+                "phpunit/phpunit": "^8.0",
+                "ratchet/pawl": "^0.3",
+                "squizlabs/php_codesniffer": "^3.4",
+                "swiftmailer/swiftmailer": "^6.2",
+                "twig/twig": "^2.7",
+                "vlucas/phpdotenv": "^3.3",
+                "webonyx/graphql-php": "^0.13",
+                "zendframework/zend-diactoros": "^2.1",
+                "zendframework/zend-httphandlerrunner": "^1.1",
+                "zendframework/zend-stratigility": "^3.1"
+            },
+            "suggest": {
+                "vlucas/phpdotenv": "Storing configuration in the environment is one of the tenets of a twelve-factor app."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Siler\\": "src/"
+                },
+                "files": [
+                    "src/Container/Container.php",
+                    "src/Db/Db.php",
+                    "src/Db/Mongo.php",
+                    "src/Db/Redis.php",
+                    "src/Diactoros/Diactoros.php",
+                    "src/Dotenv/Dotenv.php",
+                    "src/Functional/Functional.php",
+                    "src/Functional/Monad/Monad.php",
+                    "src/GraphQL/GraphQL.php",
+                    "src/Http/Http.php",
+                    "src/Http/Request.php",
+                    "src/Http/Response.php",
+                    "src/HttpHandlerRunner/HttpHandlerRunner.php",
+                    "src/Mail/SwiftMailer.php",
+                    "src/Monolog/Monolog.php",
+                    "src/Prelude/Str.php",
+                    "src/Prelude/Tuple.php",
+                    "src/Result/Result.php",
+                    "src/Route/Route.php",
+                    "src/Stratigility/Stratigility.php",
+                    "src/Swoole/Swoole.php",
+                    "src/Twig/Twig.php",
+                    "src/Siler.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "leocavalcante",
+                    "email": "lc@leocavalcante.com"
+                }
+            ],
+            "description": "Siler is a set of general purpose high-level abstractions aiming an API for declarative programming in PHP.",
+            "keywords": [
+                "api",
+                "framework",
+                "functional",
+                "micro",
+                "router",
+                "swoole"
+            ],
+            "time": "2019-04-01T04:54:16+00:00"
+        },
+        {
+            "name": "phpoption/phpoption",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmittjoh/php-option.git",
+                "reference": "94e644f7d2051a5f0fcf77d81605f152eecff0ed"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/94e644f7d2051a5f0fcf77d81605f152eecff0ed",
+                "reference": "94e644f7d2051a5f0fcf77d81605f152eecff0ed",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.7.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "PhpOption\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache2"
+            ],
+            "authors": [
+                {
+                    "name": "Johannes M. Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                }
+            ],
+            "description": "Option Type for PHP",
+            "keywords": [
+                "language",
+                "option",
+                "php",
+                "type"
+            ],
+            "time": "2015-07-25T16:39:46+00:00"
+        },
+        {
+            "name": "symfony/polyfill-ctype",
+            "version": "v1.12.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-ctype.git",
+                "reference": "550ebaac289296ce228a706d0867afc34687e3f4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/550ebaac289296ce228a706d0867afc34687e3f4",
+                "reference": "550ebaac289296ce228a706d0867afc34687e3f4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "ext-ctype": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.12-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Ctype\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Gert de Pagter",
+                    "email": "BackEndTea@gmail.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for ctype functions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "ctype",
+                "polyfill",
+                "portable"
+            ],
+            "time": "2019-08-06T08:03:45+00:00"
+        },
+        {
+            "name": "vlucas/phpdotenv",
+            "version": "v3.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vlucas/phpdotenv.git",
+                "reference": "5084b23845c24dbff8ac6c204290c341e4776c92"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/5084b23845c24dbff8ac6c204290c341e4776c92",
+                "reference": "5084b23845c24dbff8ac6c204290c341e4776c92",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.4 || ^7.0",
+                "phpoption/phpoption": "^1.5",
+                "symfony/polyfill-ctype": "^1.9"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.35 || ^5.0 || ^6.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Dotenv\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Vance Lucas",
+                    "email": "vance@vancelucas.com",
+                    "homepage": "http://www.vancelucas.com"
+                }
+            ],
+            "description": "Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.",
+            "keywords": [
+                "dotenv",
+                "env",
+                "environment"
+            ],
+            "time": "2019-06-15T22:40:20+00:00"
+        },
+        {
+            "name": "webonyx/graphql-php",
+            "version": "v0.13.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webonyx/graphql-php.git",
+                "reference": "123af49e46d26b0cd2e7a71a387253aa01ea9a6b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webonyx/graphql-php/zipball/123af49e46d26b0cd2e7a71a387253aa01ea9a6b",
+                "reference": "123af49e46d26b0cd2e7a71a387253aa01ea9a6b",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": "^7.1||^8.0"
+            },
+            "require-dev": {
+                "doctrine/coding-standard": "^6.0",
+                "phpbench/phpbench": "^0.14.0",
+                "phpstan/phpstan": "^0.11.4",
+                "phpstan/phpstan-phpunit": "^0.11.0",
+                "phpstan/phpstan-strict-rules": "^0.11.0",
+                "phpunit/phpcov": "^5.0",
+                "phpunit/phpunit": "^7.2",
+                "psr/http-message": "^1.0",
+                "react/promise": "2.*"
+            },
+            "suggest": {
+                "psr/http-message": "To use standard GraphQL server",
+                "react/promise": "To leverage async resolving on React PHP platform"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "GraphQL\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A PHP port of GraphQL reference implementation",
+            "homepage": "https://github.com/webonyx/graphql-php",
+            "keywords": [
+                "api",
+                "graphql"
+            ],
+            "time": "2019-08-07T08:16:55+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "gabordemooij/redbean": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
