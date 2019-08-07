@@ -10,7 +10,9 @@ services:
       MYSQL_DATABASE: ganjoor
 
   api:
-    image: phpstorm/php-72-apache-xdebug-27
+    build:
+      context: .
+      dockerfile: ./Dockerfile
     ports:
       - "8080:80"
     links:
