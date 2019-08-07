@@ -1,0 +1,32 @@
+type Category {
+    id: ID!
+    name: String!
+    children: [Category]
+}
+
+type Poet {
+    id: ID!
+    name: String!
+    description: String!
+    category: Category!
+}
+
+type Poem {
+    id: ID!
+    title: String!
+    category: Category!
+    verses: [Verse]
+}
+
+type Verse {
+    id: ID!
+    order: Int!
+    position: Int!
+    text: String!
+    poem: Poem!
+}
+
+type Query {
+    poets: [Poet]
+    poet(id: Int!): Poet
+}
