@@ -1,0 +1,26 @@
+version: "3.7"
+
+services:
+  db:
+    image: ganjoor/ganjoor-db
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: ganjoor
+
+  api:
+    image: phpstorm/php-72-apache-xdebug-27
+    ports:
+      - "8080:80"
+    links:
+      - db:mysql
+    depends_on:
+      - db
+    volumes:
+      - .:/var/www/html/
+
+networks:
+  default:
+    external: true
+    name: localnet
