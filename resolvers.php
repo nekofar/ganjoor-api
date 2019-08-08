@@ -9,8 +9,32 @@ ORM::configure('username', getenv('DB_USER'));
 ORM::configure('password', getenv('DB_PASS'));
 ORM::configure('driver_options', [PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8']);
 
+$poetType = [
+    'category' => function ($root, $args) {
+        return ORM::for_table('categories')
+            ->where('id', $root['categoryId'])
+            ->find_one();
+    }
+];
+
+$categoryType = [
+    'children' => function ($root, $args) {
+        return ORM::for_table('categories')
+            ->where('parentId', $root['id'])
+            ->find_many();
+    }
+];
+
+$poemType = [
+    'verses' => function ($root, $args) {
+        return ORM::for_table('verses')
+            ->where('poemId', $root['id'])
+            ->find_many();
+    }
+];
+
 $queryType = [
-    'poets' => function () {
+    'poets' => function ($root, $args) {
         return ORM::for_table('poets')
             ->find_many();
     },
@@ -19,18 +43,13 @@ $queryType = [
             ->where('id', $args['id'])
             ->find_one();
     },
-    'categories' => function ($root, $args) {
-        return ORM::for_table('categories')
-            ->where('poetId', $args['poetId'])
-            ->find_many();
-    },
     'category' => function ($root, $args) {
         return ORM::for_table('categories')
             ->where('id', $args['id'])
             ->find_one();
     },
     'poems' => function ($root, $args) {
-        return ORM::for_table('categories')
+        return ORM::for_table('poems')
             ->where('categoryId', $args['categoryId'])
             ->find_many();
     },
@@ -42,5 +61,8 @@ $queryType = [
 ];
 
 return [
+    'Poet' => $poetType,
+    'Category' => $categoryType,
+    'Poem' => $poemType,
     'Query' => $queryType
 ];
