@@ -2,7 +2,7 @@ type Poet {
     id: ID!
     name: String!
     description: String!
-    categoryId: Int!
+    category: Category!
 }
 
 type Category {
@@ -15,6 +15,7 @@ type Poem {
     id: ID!
     title: String!
     categoryId: Int!
+    verses: [Verse!]!
 }
 
 type Verse {
@@ -28,7 +29,6 @@ type Verse {
 type Query {
     poets: [Poet!]!
     poet(id: Int!): Poet!
-    categories(poetId: Int!): [Category!]!
     category(id: Int!): Category!
     poems(categoryId: Int!): [Poem!]!
     poem(id: Int!): Poem!
