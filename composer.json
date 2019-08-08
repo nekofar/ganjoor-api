@@ -1,4 +1,28 @@
 {
+  "name": "nekofar/ganjoor-api",
+  "description": "Basic implementation of GraphQL using PHP based on Ganjoor API",
+  "version": "0.1.0",
+  "type": "project",
+  "keywords": [
+    "php",
+    "graphql",
+    "api",
+    "ganjoor"
+  ],
+  "homepage": "http://github.com/nekofar/ganjoor-api",
+  "license": [
+    "MIT"
+  ],
+  "authors": [
+    {
+      "name": "Milad Nekofar",
+      "email": "milad@nekofar.com",
+      "homepage": "http://milad.nekofar.com"
+    }
+  ],
+  "support": {
+    "issues": "http://github.com/nekofar/ganjoor-api/issues"
+  },
   "require": {
     "ext-pdo": "*",
     "leocavalcante/siler": "^1.5",
