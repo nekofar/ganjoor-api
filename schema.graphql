@@ -1,21 +1,20 @@
-type Category {
-    id: ID!
-    name: String!
-    children: [Category]
-}
-
 type Poet {
     id: ID!
     name: String!
     description: String!
-    category: Category!
+    categoryId: Int!
+}
+
+type Category {
+    id: ID!
+    name: String!
+    children: [Category!]!
 }
 
 type Poem {
     id: ID!
     title: String!
-    category: Category!
-    verses: [Verse]
+    categoryId: Int!
 }
 
 type Verse {
@@ -23,10 +22,14 @@ type Verse {
     order: Int!
     position: Int!
     text: String!
-    poem: Poem!
+    poemId: Int!
 }
 
 type Query {
-    poets: [Poet]
-    poet(id: Int!): Poet
+    poets: [Poet!]!
+    poet(id: Int!): Poet!
+    categories(poetId: Int!): [Category!]!
+    category(id: Int!): Category!
+    poems(categoryId: Int!): [Poem!]!
+    poem(id: Int!): Poem!
 }
