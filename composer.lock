@@ -4,48 +4,69 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "36c63b7833f578987ec0a22fce99c45e",
+    "content-hash": "ea8eb26078a048c78f7b8f7b268de8c9",
     "packages": [
         {
-            "name": "gabordemooij/redbean",
-            "version": "dev-master",
+            "name": "j4mie/idiorm",
+            "version": "v1.5.6",
             "source": {
                 "type": "git",
-                "url": "https://github.com/gabordemooij/redbean.git",
-                "reference": "3ddbc6b5684684376b1f67a8c6bb9c93cf6cf476"
+                "url": "https://github.com/j4mie/idiorm.git",
+                "reference": "ee3022fcf71232309112714ca4a7760105002f99"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gabordemooij/redbean/zipball/3ddbc6b5684684376b1f67a8c6bb9c93cf6cf476",
-                "reference": "3ddbc6b5684684376b1f67a8c6bb9c93cf6cf476",
+                "url": "https://api.github.com/repos/j4mie/idiorm/zipball/ee3022fcf71232309112714ca4a7760105002f99",
+                "reference": "ee3022fcf71232309112714ca4a7760105002f99",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.4"
+                "php": ">=5.2.0"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "phpunit/phpunit": "^4.8"
             },
             "type": "library",
             "autoload": {
-                "psr-4": {
-                    "RedBeanPHP\\": "RedBeanPHP"
-                }
+                "classmap": [
+                    "idiorm.php"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "BSD-3-Clause"
+                "BSD-2-Clause",
+                "BSD-3-Clause",
+                "BSD-4-Clause"
             ],
             "authors": [
                 {
-                    "name": "Gabor de Mooij",
-                    "email": "gabor@redbeanphp.com",
-                    "homepage": "https://redbeanphp.com"
+                    "name": "Simon Holywell",
+                    "role": "Maintainer",
+                    "email": "treffynnon@php.net",
+                    "homepage": "http://simonholywell.com"
+                },
+                {
+                    "name": "Jamie Matthews",
+                    "role": "Developer",
+                    "email": "jamie.matthews@gmail.com",
+                    "homepage": "http://j4mie.org"
+                },
+                {
+                    "name": "Durham Hale",
+                    "role": "Maintainer",
+                    "email": "me@durhamhale.com",
+                    "homepage": "http://durhamhale.com"
                 }
             ],
-            "description": "RedBeanPHP ORM",
-            "homepage": "https://redbeanphp.com/",
+            "description": "A lightweight nearly-zero-configuration object-relational mapper and fluent query builder for PHP5",
+            "homepage": "http://j4mie.github.com/idiormandparis",
             "keywords": [
-                "orm"
+                "idiorm",
+                "orm",
+                "query builder"
             ],
-            "time": "2019-08-04T11:40:57+00:00"
+            "time": "2018-05-30T23:57:49+00:00"
         },
         {
             "name": "leocavalcante/siler",
@@ -356,11 +377,11 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "gabordemooij/redbean": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "ext-pdo": "*"
+    },
     "platform-dev": []
 }
