@@ -12,9 +12,12 @@ Response\header('Access-Control-Allow-Headers', 'content-type');
 
 // Respond only for POST requests
 if (Request\method_is('post')) {
+    // Context
+    $context['loaders'] = include __DIR__ . '/loaders.php';
+
     // Retrieve the Schema
     $schema = include __DIR__ . '/schema.php';
 
-    // Give it to siler
-    GraphQL\init($schema);
+    // Give it to Siler
+    GraphQL\init($schema, null, $context);
 }
