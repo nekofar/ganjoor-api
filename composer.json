@@ -1,7 +1,7 @@
 {
   "name": "nekofar/ganjoor-api",
   "description": "Basic implementation of GraphQL using PHP based on Ganjoor API",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "project",
   "keywords": [
     "php",
