@@ -1,5 +1,5 @@
 # Ganjoor GraphQL API 
-![Version](https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000)
+![Version](https://img.shields.io/badge/version-0.1.1-blue.svg?cacheSeconds=2592000)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)][2]
 [![Twitter: nekofar](https://img.shields.io/twitter/follow/nekofar.svg?style=social)][3]
 
