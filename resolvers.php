@@ -1,6 +1,7 @@
 <?php
 
 use Dotenv\Dotenv;
+use Overblog\DataLoader\DataLoader;
 
 Dotenv::create(__DIR__)->load();
 
@@ -10,53 +11,69 @@ ORM::configure('password', getenv('DB_PASS'));
 ORM::configure('driver_options', [PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8']);
 
 $poetType = [
-    'category' => function ($root, $args) {
-        return ORM::for_table('categories')
-            ->where('id', $root['categoryId'])
-            ->find_one();
+    'category' => function ($root, $args, $context) {
+        return DataLoader::await($context['loaders']['categoryLoader']->load($root['categoryId']));
     }
 ];
 
 $categoryType = [
-    'children' => function ($root, $args) {
-        return ORM::for_table('categories')
-            ->where('parentId', $root['id'])
-            ->find_many();
+    'children' => function ($root, $args, $context) {
+        return DataLoader::await($context['loaders']['categoryLoader']->loadMany(array_map(
+            function ($category) {
+                return $category['id'];
+            },
+            ORM::for_table('categories')
+                ->select('id')
+                ->where('parentId', $root['id'])
+                ->find_array()
+        )));
     }
 ];
 
 $poemType = [
-    'verses' => function ($root, $args) {
-        return ORM::for_table('verses')
-            ->where('poemId', $root['id'])
-            ->find_many();
+    'verses' => function ($root, $args, $context) {
+        return DataLoader::await($context['loaders']['verseLoader']->loadMany(array_map(
+            function ($verse) {
+                return $verse['id'];
+            },
+            ORM::for_table('verses')
+                ->select('id')
+                ->where('poemId', $root['id'])
+                ->find_array()
+        )));
     }
 ];
 
 $queryType = [
-    'poets' => function ($root, $args) {
-        return ORM::for_table('poets')
-            ->find_many();
+    'poets' => function ($root, $args, $context) {
+        return DataLoader::await($context['loaders']['poetLoader']->loadMany(array_map(
+            function ($poet) {
+                return $poet['id'];
+            },
+            ORM::for_table('poets')
+                ->select('id')
+                ->find_array()
+        )));
     },
-    'poet' => function ($root, $args) {
-        return ORM::for_table('poets')
-            ->where('id', $args['id'])
-            ->find_one();
+    'poet' => function ($root, $args, $context) {
+        return DataLoader::await($context['loaders']['poetLoader']->load($args['id']));
     },
-    'category' => function ($root, $args) {
-        return ORM::for_table('categories')
-            ->where('id', $args['id'])
-            ->find_one();
+    'category' => function ($root, $args, $context) {
+        return DataLoader::await($context['loaders']['categoryLoader']->load($args['id']));
     },
-    'poems' => function ($root, $args) {
-        return ORM::for_table('poems')
-            ->where('categoryId', $args['categoryId'])
-            ->find_many();
+    'poems' => function ($root, $args, $context) {
+        return DataLoader::await($context['loaders']['poemLoader']->loadMany(array_map(
+            function ($poem) {
+                return $poem['id'];
+            },
+            ORM::for_table('poems')
+                ->select('id')
+                ->where('categoryId', $args['categoryId'])
+                ->find_array()
+        )));
     },
-    'poem' => function ($root, $args) {
-        return ORM::for_table('poems')
-            ->where('id', $args['id'])
-            ->find_one();
+    'poem' => function ($root, $args, $context) {
+        return DataLoader::await($context['loaders']['poemLoader']->load($args['id']));
     },
 ];
 
