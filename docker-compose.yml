@@ -6,13 +6,12 @@ services:
     ports:
       - "3306:3306"
     environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: ganjoor
+      MYSQL_ROOT_PASSWORD: $DB_PASS
+      MYSQL_DATABASE: $DB_NANE
 
   api:
     build:
       context: .
-      dockerfile: ./Dockerfile
     ports:
       - "8080:80"
     links:
@@ -21,6 +20,8 @@ services:
       - db
     volumes:
       - .:/var/www/html/
+    environment:
+      XDEBUG_CONFIG: remote_host=$XDEBUG_REMOTE_HOST remote_port=$XDEBUG_REMOTE_PORT idekey=$XDEBUG_IDEKEY
 
 networks:
   default:

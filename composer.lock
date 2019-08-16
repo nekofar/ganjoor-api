@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "29cfaec3c89c3bf58590c9affbb839e5",
+    "content-hash": "760963d5ba0c05be31996fd37c851420",
     "packages": [
         {
             "name": "j4mie/idiorm",
