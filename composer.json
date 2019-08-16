@@ -1,7 +1,7 @@
 {
   "name": "nekofar/ganjoor-api",
   "description": "Basic implementation of GraphQL using PHP based on Ganjoor API",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "type": "project",
   "keywords": [
     "php",
@@ -30,5 +30,10 @@
     "vlucas/phpdotenv": "^3.4",
     "j4mie/idiorm": "^1.5",
     "overblog/dataloader-php": "^0.5.3"
+  },
+  "autoload": {
+    "files": [
+      "src/bootstrap.php"
+    ]
   }
 }

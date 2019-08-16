@@ -1,9 +1,6 @@
 <?php
 
-use Dotenv\Dotenv;
 use Overblog\DataLoader\DataLoader;
-
-Dotenv::create(__DIR__)->load();
 
 ORM::configure('mysql:host=' . getenv('DB_HOST') . ';dbname=' . getenv('DB_NAME'));
 ORM::configure('username', getenv('DB_USER'));
