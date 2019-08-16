@@ -10,24 +10,13 @@ $dataLoaderPromiseAdapter = new WebonyxGraphQLSyncPromiseAdapter($graphQLPromise
 
 GraphQL::setPromiseAdapter($graphQLPromiseAdapter);
 
-$verseLoader = new DataLoader(
+$poetLoader = new DataLoader(
     function ($keys) use ($dataLoaderPromiseAdapter) {
-        $verses = ORM::for_table('verses')
+        $categories = ORM::for_table('poets')
             ->where_id_in($keys)
             ->find_array();
 
-        return $dataLoaderPromiseAdapter->createAll($verses);
-    },
-    $dataLoaderPromiseAdapter
-);
-
-$poemLoader = new DataLoader(
-    function ($keys) use ($dataLoaderPromiseAdapter) {
-        $poems = ORM::for_table('poems')
-            ->where_id_in($keys)
-            ->find_array();
-
-        return $dataLoaderPromiseAdapter->createAll($poems);
+        return $dataLoaderPromiseAdapter->createAll($categories);
     },
     $dataLoaderPromiseAdapter
 );
@@ -42,14 +31,25 @@ $categoryLoader = new DataLoader(
     },
     $dataLoaderPromiseAdapter
 );
-
-$poetLoader = new DataLoader(
+$poemLoader = new DataLoader(
     function ($keys) use ($dataLoaderPromiseAdapter) {
-        $categories = ORM::for_table('poets')
+        $poems = ORM::for_table('poems')
             ->where_id_in($keys)
             ->find_array();
 
-        return $dataLoaderPromiseAdapter->createAll($categories);
+        return $dataLoaderPromiseAdapter->createAll($poems);
+    },
+    $dataLoaderPromiseAdapter
+);
+
+
+$verseLoader = new DataLoader(
+    function ($keys) use ($dataLoaderPromiseAdapter) {
+        $verses = ORM::for_table('verses')
+            ->where_id_in($keys)
+            ->find_array();
+
+        return $dataLoaderPromiseAdapter->createAll($verses);
     },
     $dataLoaderPromiseAdapter
 );
