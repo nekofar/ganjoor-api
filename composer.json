@@ -30,5 +30,10 @@
     "vlucas/phpdotenv": "^3.4",
     "j4mie/idiorm": "^1.5",
     "overblog/dataloader-php": "^0.5.3"
+  },
+  "autoload": {
+    "files": [
+      "src/bootstrap.php"
+    ]
   }
 }
