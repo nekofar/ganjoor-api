@@ -9,13 +9,13 @@ ORM::configure('driver_options', [PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf
 
 $poetType = [
     'category' => function ($root, $args, $context) {
-        return DataLoader::await($context['loaders']['categoryLoader']->load($root['categoryId']));
+        return ($context['loaders']['categoryLoader']->load($root['categoryId']));
     }
 ];
 
 $categoryType = [
     'children' => function ($root, $args, $context) {
-        return DataLoader::await($context['loaders']['categoryLoader']->loadMany(array_map(
+        return ($context['loaders']['categoryLoader']->loadMany(array_map(
             function ($category) {
                 return $category['id'];
             },
@@ -29,7 +29,7 @@ $categoryType = [
 
 $poemType = [
     'verses' => function ($root, $args, $context) {
-        return DataLoader::await($context['loaders']['verseLoader']->loadMany(array_map(
+        return ($context['loaders']['verseLoader']->loadMany(array_map(
             function ($verse) {
                 return $verse['id'];
             },
@@ -43,7 +43,7 @@ $poemType = [
 
 $queryType = [
     'poets' => function ($root, $args, $context) {
-        return DataLoader::await($context['loaders']['poetLoader']->loadMany(array_map(
+        return ($context['loaders']['poetLoader']->loadMany(array_map(
             function ($poet) {
                 return $poet['id'];
             },
@@ -53,13 +53,13 @@ $queryType = [
         )));
     },
     'poet' => function ($root, $args, $context) {
-        return DataLoader::await($context['loaders']['poetLoader']->load($args['id']));
+        return ($context['loaders']['poetLoader']->load($args['id']));
     },
     'category' => function ($root, $args, $context) {
-        return DataLoader::await($context['loaders']['categoryLoader']->load($args['id']));
+        return ($context['loaders']['categoryLoader']->load($args['id']));
     },
     'poems' => function ($root, $args, $context) {
-        return DataLoader::await($context['loaders']['poemLoader']->loadMany(array_map(
+        return ($context['loaders']['poemLoader']->loadMany(array_map(
             function ($poem) {
                 return $poem['id'];
             },
@@ -70,7 +70,7 @@ $queryType = [
         )));
     },
     'poem' => function ($root, $args, $context) {
-        return DataLoader::await($context['loaders']['poemLoader']->load($args['id']));
+        return ($context['loaders']['poemLoader']->load($args['id']));
     },
 ];
 

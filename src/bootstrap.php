@@ -1,12 +1,12 @@
 <?php
 
 use Dotenv\Dotenv;
-use Siler\GraphQL;
+use GraphQL\GraphQL;
 use Siler\Http\Request;
 use Siler\Http\Response;
 
 // Loads environment variables
-Dotenv::create( '../')->load();
+Dotenv::create('../')->load();
 
 // Enable CORS
 Response\header('Access-Control-Allow-Origin', '*');
@@ -20,6 +20,27 @@ if (Request\method_is('post')) {
     // Retrieve the Schema
     $schema = include 'schema.php';
 
-    // Give it to Siler
-    GraphQL\init($schema, null, $context);
+    // Initializes a new GraphQL endpoint.
+    if (preg_match('#application/json(;charset=utf-8)?#', Request\header('Content-Type'))) {
+        $data = Request\json('php://input');
+    } else {
+        $data = Request\post();
+    }
+
+    if (!is_array($data)) {
+        throw new UnexpectedValueException('Input should be a JSON object');
+    }
+
+    // Executes a GraphQL query over a schema.
+    $promise = GraphQL::promiseToExecute(
+        $graphQLPromiseAdapter,
+        $schema,
+        Siler\array_get($data, 'query'),
+        null,
+        $context,
+        Siler\array_get($data, 'variables'),
+        Siler\array_get($data, 'operationName')
+    );
+
+    Response\json($graphQLPromiseAdapter->wait($promise));
 }

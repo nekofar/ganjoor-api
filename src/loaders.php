@@ -31,6 +31,7 @@ $categoryLoader = new DataLoader(
     },
     $dataLoaderPromiseAdapter
 );
+
 $poemLoader = new DataLoader(
     function ($keys) use ($dataLoaderPromiseAdapter) {
         $poems = ORM::for_table('poems')
