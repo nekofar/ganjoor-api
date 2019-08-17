@@ -29,15 +29,7 @@ $categoryType = [
 
 $poemType = [
     'verses' => function ($root, $args, $context) {
-        return ($context['loaders']['verseLoader']->loadMany(array_map(
-            function ($verse) {
-                return $verse['id'];
-            },
-            ORM::for_table('verses')
-                ->select('id')
-                ->where('poemId', $root['id'])
-                ->find_array()
-        )));
+        return ($context['loaders']['verseByPoemIdLoader']->load($root['id']));
     }
 ];
 

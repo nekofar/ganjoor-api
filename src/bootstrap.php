@@ -1,6 +1,7 @@
 <?php
 
 use Dotenv\Dotenv;
+use GraphQL\Executor\Executor;
 use GraphQL\GraphQL;
 use Siler\Http\Request;
 use Siler\Http\Response;
@@ -33,7 +34,7 @@ if (Request\method_is('post')) {
 
     // Executes a GraphQL query over a schema.
     $promise = GraphQL::promiseToExecute(
-        $graphQLPromiseAdapter,
+        Executor::getPromiseAdapter(),
         $schema,
         Siler\array_get($data, 'query'),
         null,

@@ -32,6 +32,19 @@ $categoryLoader = new DataLoader(
     $dataLoaderPromiseAdapter
 );
 
+$categoryByParentIdLoader = new DataLoader(
+    function ($keys) use ($dataLoaderPromiseAdapter) {
+        $categories = ORM::for_table('categories')
+            ->where_in('parentId', $keys)
+            ->find_array();
+
+        $collection = new Cake\Collection\Collection($categories);
+
+        return $dataLoaderPromiseAdapter->createAll(array_values($collection->groupBy('parentId')->toArray()));
+    },
+    $dataLoaderPromiseAdapter
+);
+
 $poemLoader = new DataLoader(
     function ($keys) use ($dataLoaderPromiseAdapter) {
         $poems = ORM::for_table('poems')
@@ -42,7 +55,6 @@ $poemLoader = new DataLoader(
     },
     $dataLoaderPromiseAdapter
 );
-
 
 $verseLoader = new DataLoader(
     function ($keys) use ($dataLoaderPromiseAdapter) {
@@ -55,4 +67,24 @@ $verseLoader = new DataLoader(
     $dataLoaderPromiseAdapter
 );
 
-return compact('verseLoader', 'categoryLoader', 'poetLoader', 'poemLoader');
+$verseByPoemIdLoader = new DataLoader(
+    function ($keys) use ($dataLoaderPromiseAdapter) {
+        $verses = ORM::for_table('verses')
+            ->where_in('poemId', $keys)
+            ->find_array();
+
+        $collection = new Cake\Collection\Collection($verses);
+
+        return $dataLoaderPromiseAdapter->createAll(array_values($collection->groupBy('poemId')->toArray()));
+    },
+    $dataLoaderPromiseAdapter
+);
+
+return compact(
+    'verseLoader',
+    'verseByPoemIdLoader',
+    'categoryLoader',
+    'categoryByParentIdLoader',
+    'poetLoader',
+    'poemLoader'
+);
