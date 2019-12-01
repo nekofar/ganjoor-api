@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "cakephp/collection",
-            "version": "3.8.2",
+            "version": "3.8.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/collection.git",
-                "reference": "5f22678fc2d151082e331b20677d9696563af549"
+                "reference": "1f15659671fbbd46d4a48b19bb8fac3ae4857cc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/collection/zipball/5f22678fc2d151082e331b20677d9696563af549",
-                "reference": "5f22678fc2d151082e331b20677d9696563af549",
+                "url": "https://api.github.com/repos/cakephp/collection/zipball/1f15659671fbbd46d4a48b19bb8fac3ae4857cc1",
+                "reference": "1f15659671fbbd46d4a48b19bb8fac3ae4857cc1",
                 "shasum": ""
             },
             "require": {
@@ -50,7 +50,7 @@
                 "collections",
                 "iterators"
             ],
-            "time": "2019-02-26T20:10:41+00:00"
+            "time": "2019-10-30T04:06:05+00:00"
         },
         {
             "name": "j4mie/idiorm",
@@ -88,21 +88,21 @@
             "authors": [
                 {
                     "name": "Simon Holywell",
-                    "role": "Maintainer",
                     "email": "treffynnon@php.net",
-                    "homepage": "http://simonholywell.com"
+                    "homepage": "http://simonholywell.com",
+                    "role": "Maintainer"
                 },
                 {
                     "name": "Jamie Matthews",
-                    "role": "Developer",
                     "email": "jamie.matthews@gmail.com",
-                    "homepage": "http://j4mie.org"
+                    "homepage": "http://j4mie.org",
+                    "role": "Developer"
                 },
                 {
                     "name": "Durham Hale",
-                    "role": "Maintainer",
                     "email": "me@durhamhale.com",
-                    "homepage": "http://durhamhale.com"
+                    "homepage": "http://durhamhale.com",
+                    "role": "Maintainer"
                 }
             ],
             "description": "A lightweight nearly-zero-configuration object-relational mapper and fluent query builder for PHP5",
