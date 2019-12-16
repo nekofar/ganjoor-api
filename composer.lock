@@ -4,24 +4,24 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f50c597f1891386bccc09301f60bceb9",
+    "content-hash": "5c3c0c7ed813655c3c30dd7997921b44",
     "packages": [
         {
             "name": "cakephp/collection",
-            "version": "3.8.7",
+            "version": "4.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/collection.git",
-                "reference": "3541cdd1739334fcbe301daed8d6cb9458903fdd"
+                "reference": "974820005528264f3bdd1780a6754780227951ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/collection/zipball/3541cdd1739334fcbe301daed8d6cb9458903fdd",
-                "reference": "3541cdd1739334fcbe301daed8d6cb9458903fdd",
+                "url": "https://api.github.com/repos/cakephp/collection/zipball/974820005528264f3bdd1780a6754780227951ea",
+                "reference": "974820005528264f3bdd1780a6754780227951ea",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.6.0"
+                "php": ">=7.2.0"
             },
             "type": "library",
             "autoload": {
@@ -50,7 +50,7 @@
                 "collections",
                 "iterators"
             ],
-            "time": "2019-11-20T00:00:46+00:00"
+            "time": "2019-11-20T03:49:13+00:00"
         },
         {
             "name": "j4mie/idiorm",

@@ -30,7 +30,7 @@
     "vlucas/phpdotenv": "^4.0",
     "j4mie/idiorm": "^1.5",
     "overblog/dataloader-php": "^0.5.3",
-    "cakephp/collection": "^3.8"
+    "cakephp/collection": "^4.0"
   },
   "autoload": {
     "files": [
