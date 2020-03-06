@@ -116,16 +116,16 @@
         },
         {
             "name": "leocavalcante/siler",
-            "version": "v1.7.1",
+            "version": "v1.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/leocavalcante/siler.git",
-                "reference": "a153d82ccd87924ec7a61b5e5c0dd202b65d55ec"
+                "reference": "929ce3669492211dc22575b0144d3fafda162976"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/leocavalcante/siler/zipball/a153d82ccd87924ec7a61b5e5c0dd202b65d55ec",
-                "reference": "a153d82ccd87924ec7a61b5e5c0dd202b65d55ec",
+                "url": "https://api.github.com/repos/leocavalcante/siler/zipball/929ce3669492211dc22575b0144d3fafda162976",
+                "reference": "929ce3669492211dc22575b0144d3fafda162976",
                 "shasum": ""
             },
             "require": {
@@ -135,6 +135,11 @@
                 "cboden/ratchet": "^0.4.1",
                 "cocur/slugify": "^3.2",
                 "gabordemooij/redbean": "^5.4",
+                "google/protobuf": "^3.11",
+                "grpc/grpc": "^1.25",
+                "laminas/laminas-diactoros": "^2.2",
+                "laminas/laminas-httphandlerrunner": "^1.1",
+                "laminas/laminas-stratigility": "^3.2",
                 "monolog/monolog": "^2.0",
                 "phpunit/phpunit": "^8.4",
                 "squizlabs/php_codesniffer": "^3.5",
@@ -144,10 +149,7 @@
                 "twig/twig": "^3.0",
                 "vimeo/psalm": "^3.7",
                 "vlucas/phpdotenv": "^3.6",
-                "webonyx/graphql-php": "^0.13",
-                "zendframework/zend-diactoros": "^2.2",
-                "zendframework/zend-httphandlerrunner": "^1.1",
-                "zendframework/zend-stratigility": "^3.2"
+                "webonyx/graphql-php": "^0.13"
             },
             "type": "library",
             "autoload": {
@@ -159,11 +161,12 @@
                     "src/Diactoros/Diactoros.php",
                     "src/Dotenv/Dotenv.php",
                     "src/Encoder/Json.php",
-                    "src/facades.php",
+                    "src/Env/Env.php",
                     "src/File/File.php",
                     "src/Functional/Functional.php",
                     "src/Functional/Monad/Monad.php",
                     "src/GraphQL/GraphQL.php",
+                    "src/Grpc/Grpc.php",
                     "src/Http/Http.php",
                     "src/Http/Request.php",
                     "src/Http/Response.php",
@@ -175,10 +178,11 @@
                     "src/Ratchet/Ratchet.php",
                     "src/Result/Result.php",
                     "src/Route/Route.php",
-                    "src/Siler.php",
                     "src/Stratigility/Stratigility.php",
                     "src/Swoole/Swoole.php",
-                    "src/Twig/Twig.php"
+                    "src/Twig/Twig.php",
+                    "src/Siler.php",
+                    "src/facades.php"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -201,7 +205,7 @@
                 "router",
                 "swoole"
             ],
-            "time": "2019-12-11T13:33:16+00:00"
+            "time": "2020-03-04T00:45:11+00:00"
         },
         {
             "name": "overblog/dataloader-php",
