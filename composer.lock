@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "cakephp/collection",
-            "version": "4.0.4",
+            "version": "4.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/collection.git",
-                "reference": "d230546c39d4f8ab8530d37043ed1608a5c34a2f"
+                "reference": "96bfd16c815fb8cbdaf736d5dc5dc9236af76567"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/collection/zipball/d230546c39d4f8ab8530d37043ed1608a5c34a2f",
-                "reference": "d230546c39d4f8ab8530d37043ed1608a5c34a2f",
+                "url": "https://api.github.com/repos/cakephp/collection/zipball/96bfd16c815fb8cbdaf736d5dc5dc9236af76567",
+                "reference": "96bfd16c815fb8cbdaf736d5dc5dc9236af76567",
                 "shasum": ""
             },
             "require": {
@@ -50,7 +50,7 @@
                 "collections",
                 "iterators"
             ],
-            "time": "2020-01-18T20:04:49+00:00"
+            "time": "2020-05-20T14:35:50+00:00"
         },
         {
             "name": "j4mie/idiorm",
