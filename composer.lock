@@ -178,16 +178,16 @@
         },
         {
             "name": "leocavalcante/siler",
-            "version": "v1.7.2",
+            "version": "v1.7.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/leocavalcante/siler.git",
-                "reference": "929ce3669492211dc22575b0144d3fafda162976"
+                "reference": "3c0b351949599b5f0bdc405a9742545e3eea05dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/leocavalcante/siler/zipball/929ce3669492211dc22575b0144d3fafda162976",
-                "reference": "929ce3669492211dc22575b0144d3fafda162976",
+                "url": "https://api.github.com/repos/leocavalcante/siler/zipball/3c0b351949599b5f0bdc405a9742545e3eea05dc",
+                "reference": "3c0b351949599b5f0bdc405a9742545e3eea05dc",
                 "shasum": ""
             },
             "require": {
@@ -195,23 +195,26 @@
             },
             "require-dev": {
                 "cboden/ratchet": "^0.4.1",
-                "cocur/slugify": "^3.2",
-                "gabordemooij/redbean": "^5.4",
-                "google/protobuf": "^3.11",
-                "grpc/grpc": "^1.25",
+                "cocur/slugify": "^4.0",
+                "doctrine/annotations": "^1.10",
+                "doctrine/cache": "^1.10",
+                "gabordemooij/redbean": "^5.5",
+                "google/protobuf": "^3.12",
+                "grpc/grpc": "^1.30",
                 "laminas/laminas-diactoros": "^2.2",
                 "laminas/laminas-httphandlerrunner": "^1.1",
                 "laminas/laminas-stratigility": "^3.2",
-                "monolog/monolog": "^2.0",
-                "phpunit/phpunit": "^8.4",
+                "monolog/monolog": "^2.1",
+                "phpunit/phpunit": "^9.2",
+                "psr/event-dispatcher": "^1.0",
                 "squizlabs/php_codesniffer": "^3.5",
                 "swiftmailer/swiftmailer": "^6.2",
-                "swoole/ide-helper": "^4.4",
+                "swoole/ide-helper": "^4.5",
                 "textalk/websocket": "^1.2",
                 "twig/twig": "^3.0",
-                "vimeo/psalm": "^3.7",
-                "vlucas/phpdotenv": "^3.6",
-                "webonyx/graphql-php": "^0.13"
+                "vimeo/psalm": "^3.12",
+                "vlucas/phpdotenv": "^5.0",
+                "webonyx/graphql-php": "^14.0"
             },
             "type": "library",
             "autoload": {
@@ -228,6 +231,7 @@
                     "src/Functional/Functional.php",
                     "src/Functional/Monad/Monad.php",
                     "src/GraphQL/GraphQL.php",
+                    "src/GraphQL/GraphiQL.php",
                     "src/Grpc/Grpc.php",
                     "src/Http/Http.php",
                     "src/Http/Request.php",
@@ -235,6 +239,10 @@
                     "src/HttpHandlerRunner/HttpHandlerRunner.php",
                     "src/Mail/SwiftMailer.php",
                     "src/Monolog/Monolog.php",
+                    "src/Prelude/Arr.php",
+                    "src/Prelude/IO.php",
+                    "src/Prelude/Klass.php",
+                    "src/Prelude/Obj.php",
                     "src/Prelude/Str.php",
                     "src/Prelude/Tuple.php",
                     "src/Ratchet/Ratchet.php",
@@ -273,7 +281,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-03-04T00:45:11+00:00"
+            "time": "2020-07-13T23:01:49+00:00"
         },
         {
             "name": "overblog/dataloader-php",
