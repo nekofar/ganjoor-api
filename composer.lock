@@ -178,16 +178,16 @@
         },
         {
             "name": "leocavalcante/siler",
-            "version": "v1.7.3",
+            "version": "v1.7.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/leocavalcante/siler.git",
-                "reference": "3c0b351949599b5f0bdc405a9742545e3eea05dc"
+                "reference": "855c68873c8915b75b78459455c6b5fbed5539eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/leocavalcante/siler/zipball/3c0b351949599b5f0bdc405a9742545e3eea05dc",
-                "reference": "3c0b351949599b5f0bdc405a9742545e3eea05dc",
+                "url": "https://api.github.com/repos/leocavalcante/siler/zipball/855c68873c8915b75b78459455c6b5fbed5539eb",
+                "reference": "855c68873c8915b75b78459455c6b5fbed5539eb",
                 "shasum": ""
             },
             "require": {
@@ -281,7 +281,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-07-13T23:01:49+00:00"
+            "time": "2020-07-31T16:45:03+00:00"
         },
         {
             "name": "overblog/dataloader-php",
