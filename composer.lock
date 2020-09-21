@@ -178,16 +178,16 @@
         },
         {
             "name": "leocavalcante/siler",
-            "version": "v1.7.3",
+            "version": "v1.7.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/leocavalcante/siler.git",
-                "reference": "3c0b351949599b5f0bdc405a9742545e3eea05dc"
+                "reference": "6fc225db6940bc72586ae58c6af3e8538fc16cbe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/leocavalcante/siler/zipball/3c0b351949599b5f0bdc405a9742545e3eea05dc",
-                "reference": "3c0b351949599b5f0bdc405a9742545e3eea05dc",
+                "url": "https://api.github.com/repos/leocavalcante/siler/zipball/6fc225db6940bc72586ae58c6af3e8538fc16cbe",
+                "reference": "6fc225db6940bc72586ae58c6af3e8538fc16cbe",
                 "shasum": ""
             },
             "require": {
@@ -201,6 +201,7 @@
                 "gabordemooij/redbean": "^5.5",
                 "google/protobuf": "^3.12",
                 "grpc/grpc": "^1.30",
+                "hassankhan/config": "^2.1",
                 "laminas/laminas-diactoros": "^2.2",
                 "laminas/laminas-httphandlerrunner": "^1.1",
                 "laminas/laminas-stratigility": "^3.2",
@@ -222,6 +223,7 @@
                     "Siler\\": "src/"
                 },
                 "files": [
+                    "src/Config/Config.php",
                     "src/Container/Container.php",
                     "src/Diactoros/Diactoros.php",
                     "src/Dotenv/Dotenv.php",
@@ -281,7 +283,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-07-13T23:01:49+00:00"
+            "time": "2020-09-20T02:55:29+00:00"
         },
         {
             "name": "overblog/dataloader-php",
