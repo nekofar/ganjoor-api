@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cad4b13ca945be807cf335bf5f788da2",
+    "content-hash": "72b66cedb5dbdd40e4410293ec99dbf1",
     "packages": [
         {
             "name": "cakephp/collection",
@@ -287,29 +287,29 @@
         },
         {
             "name": "overblog/dataloader-php",
-            "version": "v0.5.3",
+            "version": "v0.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/overblog/dataloader-php.git",
-                "reference": "cf9ed60df7a14ceb60ee998f226400435d076f15"
+                "reference": "69ae4b7107231a95018c9039293a7fea9e800e09"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/overblog/dataloader-php/zipball/cf9ed60df7a14ceb60ee998f226400435d076f15",
-                "reference": "cf9ed60df7a14ceb60ee998f226400435d076f15",
+                "url": "https://api.github.com/repos/overblog/dataloader-php/zipball/69ae4b7107231a95018c9039293a7fea9e800e09",
+                "reference": "69ae4b7107231a95018c9039293a7fea9e800e09",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.5|^7.0"
+                "php": "^7.1|^8.0"
             },
             "replace": {
                 "overblog/promise-adapter": "self.version"
             },
             "require-dev": {
                 "guzzlehttp/promises": "^1.3.0",
-                "phpunit/phpunit": "^4.1|^5.1",
+                "phpunit/phpunit": "^7.5|^8.5",
                 "react/promise": "^2.5.0",
-                "webonyx/graphql-php": "^0.11.0"
+                "webonyx/graphql-php": "^14.0"
             },
             "suggest": {
                 "guzzlehttp/promises": "To use with Guzzle promise",
@@ -319,7 +319,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.5-dev"
+                    "dev-master": "0.6-dev"
                 }
             },
             "autoload": {
@@ -338,7 +338,7 @@
                 "caching",
                 "dataLoader"
             ],
-            "time": "2018-12-15T17:19:30+00:00"
+            "time": "2021-01-13T11:41:29+00:00"
         },
         {
             "name": "phpoption/phpoption",
