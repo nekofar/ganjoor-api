@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "cakephp/collection",
-            "version": "4.2.2",
+            "version": "4.3.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/collection.git",
-                "reference": "7ef60ac7dbc6b954ccc94f35662cea6b23242f5b"
+                "reference": "0380ace0a83b3797d77323fca8e8b7c9e0305190"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/collection/zipball/7ef60ac7dbc6b954ccc94f35662cea6b23242f5b",
-                "reference": "7ef60ac7dbc6b954ccc94f35662cea6b23242f5b",
+                "url": "https://api.github.com/repos/cakephp/collection/zipball/0380ace0a83b3797d77323fca8e8b7c9e0305190",
+                "reference": "0380ace0a83b3797d77323fca8e8b7c9e0305190",
                 "shasum": ""
             },
             "require": {
@@ -50,7 +50,7 @@
                 "collections",
                 "iterators"
             ],
-            "time": "2020-12-15T10:30:32+00:00"
+            "time": "2022-04-13T14:20:14+00:00"
         },
         {
             "name": "graham-campbell/result-type",
@@ -284,6 +284,7 @@
                     "type": "github"
                 }
             ],
+            "abandoned": true,
             "time": "2021-01-27T19:18:40+00:00"
         },
         {
