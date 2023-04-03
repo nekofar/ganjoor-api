@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.0-alpha.1] - 2023-04-03
+
+### <!-- 07 -->Continuous Integrations
+
+- Update `dependabot` configs for `php` and `actions`
+
 ## [1.0.0-alpha.0] - 2023-04-03
 
 ### <!-- 04 -->Refactor
