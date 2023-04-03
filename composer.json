@@ -24,16 +24,16 @@
   },
   "require": {
     "ext-pdo": "*",
-    "cakephp/collection": "^4.0",
-    "j4mie/idiorm": "^1.5",
-    "leocavalcante/siler": "^1.5",
-    "overblog/dataloader-php": "^0.7.0",
-    "vlucas/phpdotenv": "^5.0",
-    "webonyx/graphql-php": "^15.2.4"
+    "cakephp/collection": "4.4.12",
+    "j4mie/idiorm": "1.5.8",
+    "leocavalcante/siler": "1.7.9",
+    "overblog/dataloader-php": "0.7.0",
+    "vlucas/phpdotenv": "5.5.0",
+    "webonyx/graphql-php": "15.2.4"
   },
   "require-dev": {
-    "ergebnis/composer-normalize": "^2.30",
-    "nekofar/dev-tools": "*"
+    "ergebnis/composer-normalize": "2.30.2",
+    "nekofar/dev-tools": "2.1.5"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
