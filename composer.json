@@ -35,5 +35,10 @@
     "files": [
       "src/bootstrap.php"
     ]
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require-dev": {
+    "nekofar/dev-tools": "*"
   }
 }
