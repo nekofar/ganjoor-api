@@ -1,7 +1,7 @@
 # Ganjoor GraphQL API 
 ![Version](https://img.shields.io/badge/version-0.1.1-blue.svg?cacheSeconds=2592000)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)][2]
-[![Twitter: nekofar](https://img.shields.io/twitter/follow/nekofar.svg?style=flat)][3]
+[![Twitter: nekofar](https://img.shields.io/badge/follow-%40nekofar-1DA1F2?logo=twitter&style=flat)][3]
 
 > Basic implementation of GraphQL using PHP based on [Ganjoor API][4]
 
