@@ -25,10 +25,10 @@
   "require": {
     "ext-pdo": "*",
     "leocavalcante/siler": "^1.5",
-    "webonyx/graphql-php": "^0.13.6",
+    "webonyx/graphql-php": "^15.2.4",
     "vlucas/phpdotenv": "^5.0",
     "j4mie/idiorm": "^1.5",
-    "overblog/dataloader-php": "^0.5.3",
+    "overblog/dataloader-php": "^0.7.0",
     "cakephp/collection": "^4.0"
   },
   "autoload": {
