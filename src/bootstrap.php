@@ -7,7 +7,7 @@ use Siler\Http\Request;
 use Siler\Http\Response;
 
 // Loads environment variables
-Dotenv::create('../')->load();
+Dotenv::createImmutable('../')->load();
 
 // Enable CORS
 Response\header('Access-Control-Allow-Origin', '*');
