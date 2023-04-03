@@ -1,16 +1,15 @@
 {
   "name": "nekofar/ganjoor-api",
   "description": "Basic implementation of GraphQL using PHP based on Ganjoor API",
+  "license": [
+    "MIT"
+  ],
   "type": "project",
   "keywords": [
     "php",
     "graphql",
     "api",
     "ganjoor"
-  ],
-  "homepage": "http://github.com/nekofar/ganjoor-api",
-  "license": [
-    "MIT"
   ],
   "authors": [
     {
@@ -19,27 +18,29 @@
       "homepage": "http://milad.nekofar.com"
     }
   ],
+  "homepage": "http://github.com/nekofar/ganjoor-api",
   "support": {
     "issues": "http://github.com/nekofar/ganjoor-api/issues"
   },
   "require": {
     "ext-pdo": "*",
-    "leocavalcante/siler": "^1.5",
-    "webonyx/graphql-php": "^15.2.4",
-    "vlucas/phpdotenv": "^5.0",
+    "cakephp/collection": "^4.0",
     "j4mie/idiorm": "^1.5",
+    "leocavalcante/siler": "^1.5",
     "overblog/dataloader-php": "^0.7.0",
-    "cakephp/collection": "^4.0"
+    "vlucas/phpdotenv": "^5.0",
+    "webonyx/graphql-php": "^15.2.4"
   },
+  "require-dev": {
+    "ergebnis/composer-normalize": "^2.30",
+    "nekofar/dev-tools": "*"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
   "autoload": {
     "files": [
       "src/bootstrap.php"
     ]
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true,
-  "require-dev": {
-    "nekofar/dev-tools": "*"
   },
   "config": {
     "allow-plugins": {
@@ -47,7 +48,14 @@
       "pestphp/pest-plugin": true,
       "composer/installers": true,
       "phpstan/extension-installer": true,
-      "dealerdirect/phpcodesniffer-composer-installer": true
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "ergebnis/composer-normalize": true
+    }
+  },
+  "extra": {
+    "composer-normalize": {
+      "indent-size": 2,
+      "indent-style": "space"
     }
   },
   "scripts": {
