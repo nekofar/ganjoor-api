@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.0-alpha.2] - 2023-04-03
+
+### <!-- 07 -->Continuous Integrations
+
+- Create a new `php` workflow action
+
 ## [1.0.0-alpha.1] - 2023-04-03
 
 ### <!-- 07 -->Continuous Integrations
