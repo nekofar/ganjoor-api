@@ -112,16 +112,16 @@
         },
         {
             "name": "j4mie/idiorm",
-            "version": "v1.5.7",
+            "version": "v1.5.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/j4mie/idiorm.git",
-                "reference": "d23f97053ef5d0b988a02c6a71eb5c6118b2f5b4"
+                "reference": "6da4e7ec8382ce0cb95543e08c0a1371b77bac8b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/j4mie/idiorm/zipball/d23f97053ef5d0b988a02c6a71eb5c6118b2f5b4",
-                "reference": "d23f97053ef5d0b988a02c6a71eb5c6118b2f5b4",
+                "url": "https://api.github.com/repos/j4mie/idiorm/zipball/6da4e7ec8382ce0cb95543e08c0a1371b77bac8b",
+                "reference": "6da4e7ec8382ce0cb95543e08c0a1371b77bac8b",
                 "shasum": ""
             },
             "require": {
@@ -170,7 +170,7 @@
                 "orm",
                 "query builder"
             ],
-            "time": "2020-04-29T00:37:09+00:00"
+            "time": "2022-07-18T03:49:49+00:00"
         },
         {
             "name": "leocavalcante/siler",
