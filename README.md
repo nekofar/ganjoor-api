@@ -14,7 +14,7 @@ composer install
 ## Usage
 
 ```sh
-docker-compose up
+docker compose up
 ```
 
 [1]: https://github.com/nekofar/ganjoor-api 

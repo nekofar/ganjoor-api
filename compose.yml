@@ -22,8 +22,3 @@ services:
       - .:/var/www/html/
     environment:
       XDEBUG_CONFIG: remote_host=$XDEBUG_REMOTE_HOST remote_port=$XDEBUG_REMOTE_PORT idekey=$XDEBUG_IDEKEY
-
-networks:
-  default:
-    external: true
-    name: localnet

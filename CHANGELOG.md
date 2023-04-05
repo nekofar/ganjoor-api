@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.0-alpha.3] - 2023-04-05
+
+### <!-- 04 -->Refactor
+
+- Replace `create` by `createImmutable` on the `Dotenv`
+
+### <!-- 05 -->Documentation
+
+- Update usage command over readme
+
+### <!-- 07 -->Continuous Integrations
+
+- Remove docker network from compose configs
+- Change api docker php version from `7.3` to `7.4`
+
+### <!-- 08 -->Miscellaneous Tasks
+
+- Add `nekofar/dev-tools` to `require-dev`
+- Update `allow-plugins` configs
+- Add a `start` script in composer configs
+- Add `ergebnis/composer-normalize` to `require-dev`
+- Change package versions to exact
+
 ## [1.0.0-alpha.2] - 2023-04-03
 
 ### <!-- 07 -->Continuous Integrations
